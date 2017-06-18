@@ -23,7 +23,7 @@ class WeatherDisplay extends Component {
     const cityID = this.props.cityID;
     const URL = "http://api.openweathermap.org/data/2.5/weather?id=" +
       cityID +
-      "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=imperial";
+      "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=metric";
     fetch(URL).then(res => res.json()).then(json => {
       this.setState({ weatherData: json });
     });
