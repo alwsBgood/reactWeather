@@ -39,10 +39,10 @@ class WeatherDisplay extends Component {
           {weather.main} in {weatherData.name}
           <img src={iconUrl} alt={weatherData.description} />
         </h1>
-        <p>Current: {weatherData.main.temp}°</p>
-        <p>High: {weatherData.main.temp_max}°</p>
-        <p>Low: {weatherData.main.temp_min}°</p>
-        <p>Wind Speed: {weatherData.wind.speed} mi/hr</p>
+        <p>Current Temperature: {weatherData.main.temp}°</p>
+        <p>Current Pressure: {weatherData.main.pressure}mm.hr.st</p>
+        <p>Clouds: {weatherData.clouds.all}%</p>
+        <p>Wind Speed: {weatherData.wind.speed} m/hr</p>
       </div>
     );
   }
